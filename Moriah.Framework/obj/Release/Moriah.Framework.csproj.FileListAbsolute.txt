@@ -1,0 +1,6 @@
+C:\Moriah\Projetos .NET\Moriah Framework\Release\Moriah.Framework.dll.config
+C:\Moriah\Projetos .NET\Moriah Framework\Release\Moriah.Framework.dll
+C:\Moriah\Projetos .NET\Moriah Framework\Release\Moriah.Framework.pdb
+C:\Moriah\Projetos .NET\Moriah Framework\Moriah.Framework\obj\Release\Moriah.Framework.csprojResolveAssemblyReference.cache
+C:\Moriah\Projetos .NET\Moriah Framework\Moriah.Framework\obj\Release\Moriah.Framework.dll
+C:\Moriah\Projetos .NET\Moriah Framework\Moriah.Framework\obj\Release\Moriah.Framework.pdb

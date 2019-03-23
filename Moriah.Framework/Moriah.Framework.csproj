@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C915CFF-73F9-4E2B-BB5C-D205CB301AF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Moriah.Framework</RootNamespace>
+    <AssemblyName>Moriah.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plivo, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Plivo.3.0.4\lib\net40\Plivo.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RestSharp, Version=100.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharpSigned.105.2.3\lib\net46\RestSharp.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Global Church\Moriah.GlobalChurch\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Oracle\EncryptG10.cs" />
+    <Compile Include="Web\System.Web.Mvc.Controller.cs" />
+    <Compile Include="Common\ExceptionUtility.cs" />
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="Common\IRetornoAcao.cs" />
+    <Compile Include="Common\JsonReturn.cs" />
+    <Compile Include="Web\JsonNoLoopResult %28PRIMEIRO%29.cs" />
+    <Compile Include="Common\RetornoAcao.cs" />
+    <Compile Include="Common\Security.cs" />
+    <Compile Include="Communication\Config.cs" />
+    <Compile Include="Communication\Const.cs" />
+    <Compile Include="Communication\Email.cs" />
+    <Compile Include="Communication\Enums.cs" />
+    <Compile Include="Communication\Exceptions\DDDInvalido.cs" />
+    <Compile Include="Communication\Exceptions\FormatoInvalidoException.cs" />
+    <Compile Include="Communication\Exceptions\FormatoPaisInvalidoException.cs" />
+    <Compile Include="Communication\Exceptions\NumeroTelefoneInvalidoException.cs" />
+    <Compile Include="Communication\SMSPlivo.cs" />
+    <Compile Include="Communication\Telefone.cs" />
+    <Compile Include="Exceptions\DataException.cs" />
+    <Compile Include="Exceptions\DataNotFoundException.cs" />
+    <Compile Include="Exceptions\FileAlreadySentException.cs" />
+    <Compile Include="Exceptions\FileContentTypeException.cs" />
+    <Compile Include="Exceptions\FileException.cs" />
+    <Compile Include="Exceptions\FileFormatException.cs" />
+    <Compile Include="Exceptions\FileNameException.cs" />
+    <Compile Include="Exceptions\FiltersExcpetions.cs" />
+    <Compile Include="Exceptions\UserNotAuthenticatedException.cs" />
+    <Compile Include="Extensions\System.Collections.cs" />
+    <Compile Include="Extensions\System.Collections.Generic.cs" />
+    <Compile Include="Extensions\System.cs" />
+    <Compile Include="Extensions\System.Linq.cs" />
+    <Compile Include="Extensions\System.IO.cs" />
+    <Compile Include="Extensions\System.Net.Mail.cs" />
+    <Compile Include="Extensions\System.Text.cs" />
+    <Compile Include="Extensions\System.Web.Mvc.cs" />
+    <Compile Include="Extensions\System.Web.cs" />
+    <Compile Include="Extensions\SystemExtensions.cs" />
+    <Compile Include="Files\Arquivo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\MoriahJsonResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\Extension\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
