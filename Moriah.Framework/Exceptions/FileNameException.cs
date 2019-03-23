@@ -11,7 +11,7 @@ namespace Moriah.Framework.Exceptions
     public class FileNameException : FileException
     {
 
-        const string msgDefault = "Nome do Arquivo Inválido!";
+        const string msgDefault = "Invalid File Name!";
 
         private static string GerarMensagem(HttpPostedFileBase arquivo)
         {
@@ -19,7 +19,7 @@ namespace Moriah.Framework.Exceptions
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(msgDefault);
             sb.AppendLine();
-            sb.AppendLine("** Informações do Arquivo ** ");
+            sb.AppendLine("** File Info ** ");
             sb.AppendLine(string.Format("FileName: {0}", arquivo.FileName));
             sb.AppendLine(string.Format("ContentType: {0}", arquivo.ContentType));
             sb.AppendLine(string.Format("ContentLength: {0}", arquivo.ContentLength));
