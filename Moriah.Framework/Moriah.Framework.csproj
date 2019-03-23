@@ -65,7 +65,6 @@
     <Compile Include="Common\ExceptionUtility.cs" />
     <Compile Include="Common\Extensions.cs" />
     <Compile Include="Common\IRetornoAcao.cs" />
-    <Compile Include="Common\JsonReturn.cs" />
     <Compile Include="Web\JsonNoLoopResult %28PRIMEIRO%29.cs" />
     <Compile Include="Common\RetornoAcao.cs" />
     <Compile Include="Common\Security.cs" />
@@ -97,7 +96,6 @@
     <Compile Include="Extensions\System.Text.cs" />
     <Compile Include="Extensions\System.Web.Mvc.cs" />
     <Compile Include="Extensions\System.Web.cs" />
-    <Compile Include="Extensions\SystemExtensions.cs" />
     <Compile Include="Files\Arquivo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\MoriahJsonResult.cs" />
