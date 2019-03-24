@@ -60,13 +60,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\IReturnAction.cs" />
+    <Compile Include="Common\ReturnAction.cs" />
+    <Compile Include="Files\FileProperties.cs" />
+    <Compile Include="Files\UpLoadFiles.cs" />
     <Compile Include="Oracle\EncryptG10.cs" />
     <Compile Include="Web\System.Web.Mvc.Controller.cs" />
     <Compile Include="Common\ExceptionUtility.cs" />
     <Compile Include="Common\Extensions.cs" />
-    <Compile Include="Common\IRetornoAcao.cs" />
     <Compile Include="Web\JsonNoLoopResult %28PRIMEIRO%29.cs" />
-    <Compile Include="Common\RetornoAcao.cs" />
     <Compile Include="Common\Security.cs" />
     <Compile Include="Communication\Config.cs" />
     <Compile Include="Communication\Const.cs" />
@@ -96,7 +98,6 @@
     <Compile Include="Extensions\System.Text.cs" />
     <Compile Include="Extensions\System.Web.Mvc.cs" />
     <Compile Include="Extensions\System.Web.cs" />
-    <Compile Include="Files\Arquivo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\MoriahJsonResult.cs" />
   </ItemGroup>
