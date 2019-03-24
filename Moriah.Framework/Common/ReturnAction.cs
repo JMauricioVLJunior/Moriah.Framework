@@ -20,6 +20,7 @@ namespace Moriah.Framework.Common
             get { return exception; }
             set
             {
+                Ok = false;
                 exception = value;
                 Message = value.Message;
             }

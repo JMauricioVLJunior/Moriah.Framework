@@ -33,13 +33,8 @@ namespace Moriah.Framework.Files
         {
             foreach (string fileName in request.Files)
             {
-                Save(request.Files[fileName]);
+                Files.Add(Save(request.Files[fileName]));
             }
-        }
-
-        public void Save(HttpPostedFileBase file)
-        {
-            Save(file);
         }
 
         public FileProperties Save(HttpPostedFileBase file, string id = "")
