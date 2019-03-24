@@ -9,3 +9,6 @@ D:\Moriah - Projetos GitHub\Moriah.Framework\Release\Moriah.Framework.dll
 D:\Moriah - Projetos GitHub\Moriah.Framework\Release\Moriah.Framework.pdb
 D:\Moriah - Projetos GitHub\Moriah.Framework\Moriah.Framework\obj\Release\Moriah.Framework.dll
 D:\Moriah - Projetos GitHub\Moriah.Framework\Moriah.Framework\obj\Release\Moriah.Framework.pdb
+D:\Moriah - Projetos GitHub\Moriah.Framework\Moriah.Framework\obj\Release\Moriah.Framework.csprojAssemblyReference.cache
+D:\Moriah - Projetos GitHub\Moriah.Framework\Moriah.Framework\obj\Release\Moriah.Framework.csproj.CoreCompileInputs.cache
+D:\Moriah - Projetos GitHub\Moriah.Framework\Moriah.Framework\obj\Release\Moriah.Framework.csproj.CopyComplete
